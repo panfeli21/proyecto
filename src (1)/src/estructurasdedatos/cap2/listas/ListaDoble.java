@@ -5,10 +5,22 @@
  */
 package estructurasdedatos.cap2.listas;
 
+import estructurasdedatos.utiles.nodos.NodoDoble;
+
 /**
  *
  * @author tusk
  */
 public class ListaDoble {
+    NodoDoble cabeza;
+    NodoDoble cola;
     
+    
+    public void CrearListaDoble (){
+    
+    this.cabeza=null;
+    this.cola=null;
+    
+    }
+   
 }
