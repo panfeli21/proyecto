@@ -9,7 +9,7 @@ import estructurasdedatos.utiles.nodos.NodoSimple;
 
 /**
  *
- * @author tusk
+ * @author
  */
 public class ListaSimple {
     
