@@ -7,8 +7,46 @@ package estructurasdedatos.cap3.mapas;
 
 /**
  *
- * @author tusk
+ * @author felipe jejeje 
  */
-public class Mapa {
+public class Mapa <c,v> {
+    
+    private c clave;
+    private v valor;    
+    private Mapa <c,v> siguiente;
+    
+    public Mapa(c clave, v valor) {
+        
+        this.clave= clave;
+        this.valor= valor;  
+}
+
+    
+    Mapa(){
+    
+    }
+    public c getClave() {
+        return clave;
+    }
+
+    public void setClave(c clave) {
+        this.clave = clave;
+    }
+
+    public v getValor() {
+        return valor;
+    }
+
+    public void setValor(v valor) {
+        this.valor = valor;
+    }
+
+    public Mapa<c, v> getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Mapa<c, v> siguiente) {
+        this.siguiente = siguiente;
+    }
     
 }
