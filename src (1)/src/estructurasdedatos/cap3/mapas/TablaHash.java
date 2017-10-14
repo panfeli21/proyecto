@@ -7,8 +7,10 @@ package estructurasdedatos.cap3.mapas;
 
 /**
  *
- * @author tusk
+ * @author felipe
  */
 public class TablaHash {
+    
+    private Mapa []
     
 }
