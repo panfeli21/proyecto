@@ -11,6 +11,26 @@ package estructurasdedatos.cap3.mapas;
  */
 public class TablaHash {
     
-    private Mapa []
+    private Mapa [] TablaHash;
+    private Mapa tamaño;
+    private int tam;
     
-}
+    
+    public void createVector(int t) {
+        this.tam = t;
+        this.tablahash = new Mapa[tam];
+    }
+
+    public int funcionhash(int valor) {
+    int vecht[] = new int[10];
+        int num = valor;
+
+    
+    
+    }
+
+
+    
+    
+    
+    }
