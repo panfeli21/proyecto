@@ -16,14 +16,25 @@ public class TablaHash {
     private int tam;
     
     
-    public void createVector(int t) {
+    public void crearVector(int t) {
         this.tam = t;
         this.tablahash = new Mapa[tam];
     }
 
     public int funcionhash(int valor) {
     int vecht[] = new int[10];
-        int num = valor;
+       int num= valor;
+        int posicion;
+        
+        for(int i=0; i<10; i++){
+        
+        int rest = num % 10;
+            num = num / 10;
+            vecht[i] = rest;
+
+        
+        
+        }
 
     
     
