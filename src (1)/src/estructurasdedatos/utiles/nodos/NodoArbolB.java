@@ -5,10 +5,20 @@
  */
 package estructurasdedatos.utiles.nodos;
 
+import estructurasdedatos.cap4.arboles.ArbolB;
+
 /**
  *
  * @author tusk
  */
 public class NodoArbolB {
-    
+ public ArbolB hijoderecho;
+        public ArbolB hijoizquierdo;
+        public int dato;
+
+        public void NodoArbol() {
+            this.hijoderecho = null;
+            this.hijoizquierdo = null;
+            this.dato = 0;
+        }     
 }
