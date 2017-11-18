@@ -12,20 +12,18 @@ package estructurasdedatos.cap1.tiposdedatos;
 public class EjercicioTiposDeDatosPersona {
     
     private String nombre;
-    public int cedula;
+    public String cedula;
     private String direccion;
     private String telofono;
     
     
-    public EjercicioTiposDeDatosPersona(int cedula) {
+    public EjercicioTiposDeDatosPersona(String nombre, String cedula, String direccion, String telofono ) {
         this.cedula = cedula;
-       
+       this.direccion= direccion;
+       this.telofono= telofono;
         
     }
 
-    public EjercicioTiposDeDatosPersona() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     /**
      * @return the nombre
      */
@@ -45,14 +43,14 @@ public class EjercicioTiposDeDatosPersona {
     /**
      * @return the cedula
      */
-    public int getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
     /**
      * @param cedula the cedula to set
      */
-    public void setCedula(int cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 

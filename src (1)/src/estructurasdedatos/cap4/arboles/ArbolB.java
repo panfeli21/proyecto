@@ -44,77 +44,18 @@ private NodoArbolB raiz;
             }
         }
         
-        public void inorder(){
+        public void orden(){
             if(!esVacia()){
-                raiz.hijoizquierdo.inorder();
+                raiz.hijoizquierdo.orden();
                 System.out.print(raiz.dato + ",");
-                raiz.hijoderecho.inorder();
+                raiz.hijoderecho.orden();
             }
         }
         
-        public void postorder(){
+        public void postorden(){
             if(!esVacia()){
-                raiz.hijoizquierdo.postorder();
-                raiz.hijoderecho.postorder();
+                raiz.hijoizquierdo.postorden();
+                raiz.hijoderecho.postorden();
                 System.out.print(raiz.dato + ",");
             }
-        }
-        
-        public ArbolB buscar(int nodo){
-            ArbolB subarbol = null;
-            if(!esVacia()){
-                if(nodo == raiz.dato){
-                    return this;
-                }else{
-                    if(nodo < raiz.dato){
-                        subarbol=raiz.hijoizquierdo.buscar(nodo);
-                    }else{
-                        subarbol=raiz.hijoderecho.buscar(nodo);
-                    }
-                }
-            }
-            
-            return subarbol;
-        }
-        
-        public int alturaArbol(){
-            if(esVacia()){
-                return 0;
-            }else{
-                int hi=raiz.hijoizquierdo.alturaArbol();
-                int hd=raiz.hijoderecho.alturaArbol();
-                return (1+Math.max(hi, hd));
-            }
-        }
-        
-        public int BuscarMinimo(){
-            ArbolB actual = this;
-            while(!actual.raiz.hijoizquierdo.esVacia()){
-                actual=actual.raiz.hijoizquierdo;
-            }
-            int devuelvo = actual.raiz.dato;
-            actual.raiz=null;
-            return devuelvo;
-        }
-        
-        public boolean esHoja(){
-            boolean hoja=false;
-            if(raiz.hijoizquierdo.esVacia() && raiz.hijoderecho.esVacia()){
-                hoja = true;
-            }
-            return hoja;
-        }
-        
-        public int cantidad(){
-            if(esVacia()){
-                return 0;
-            }else{
-                int hd=raiz.hijoderecho.cantidad();
-                int hi=raiz.hijoizquierdo.cantidad();
-                return (1+hd +hi);
-            }
-        }
-    }
-
-
-
+        }   }

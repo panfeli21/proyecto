@@ -15,6 +15,14 @@ public class NodoDoble {
     NodoDoble siguiente;
     int dato;
     
+    public void CrearNuevoNodoDoble (){
+    
+    this.siguiente= null;
+    this.anterior=null;
+    this.dato=0;    
+    
+    }
+    
     public int getDato (){
      return dato;
      
@@ -46,12 +54,6 @@ public class NodoDoble {
     
     }
     
-    public void CrearNuevoNodoDoble (){
     
-    this.siguiente= null;
-    this.anterior=null;
-    this.dato=0;    
-    
-    }
     
 }

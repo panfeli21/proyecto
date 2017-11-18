@@ -11,7 +11,7 @@ package estructurasdedatos.cap3.mapas;
  */
 public class TablaHash {
     
-    private Mapa [] TablaHash;
+   /* private Mapa [] TablaHash;
     private Mapa tamaño;
     private int tam;
     
@@ -41,7 +41,7 @@ public class TablaHash {
     }
 
 
-    
+    */
     
     
     }

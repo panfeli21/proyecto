@@ -18,8 +18,7 @@ public class Matriz {
         private int [][] matriz;
         
         public void crearMatriz(int c, int f){ // creo la matriz de enteros
-            //System.out.println("digite el numero de filas de su matriz");
-            //Scanner f= new Scanner (System.in);
+            
            this.fila=f;           
            this.columna=c;
            this.matriz= new int [f][c];
@@ -41,7 +40,18 @@ public class Matriz {
             this.matriz[f][c]=0;
         }
 
-
+        public void Imprimir(){
+        
+        for(int f=0; f< matriz.length; f++ ){
+        
+        for(int c=0; c< matriz[f].length; c++){
+            System.out.println(matriz[f][c]+ " ");
+        
+        }
+        
+        }
+        
+        }
         public void BuscarDato(int dato){
         
          for (int f = 0; f < matriz.length; f++) {   // cilco por el cual recorre las filas de la mattriz
