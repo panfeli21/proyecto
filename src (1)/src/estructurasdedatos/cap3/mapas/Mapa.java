@@ -9,7 +9,7 @@ package estructurasdedatos.cap3.mapas;
  *
  * @author felipe jejeje 
  */
-public class Mapa <c,v> {
+public class Mapa <c,v> { //template , clave y valor 
     
     private c clave;
     private v valor;    
@@ -21,10 +21,12 @@ public class Mapa <c,v> {
         this.valor= valor;  
 }
 
-    
-    Mapa(){
-    
+    public Mapa() {
     }
+  
+
+    
+    
     public c getClave() {
         return clave;
     }

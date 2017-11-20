@@ -7,7 +7,9 @@ package estructurasdedatos;
 
 import java.util.Scanner;
 
-/*import estructurasdedatos.cap1.complejidad.Ciclos;
+import estructurasdedatos.cap1.complejidad.Ciclos;
+
+/*
 import estructurasdedatos.cap1.complejidad.Condicionales;
 import estructurasdedatos.cap1.tiposdedatos.EjercicioTiposDeDatosPersona;
 import estructurasdedatos.cap4.arboles.ArbolB;
@@ -26,27 +28,49 @@ public class EstructurasDeDatos {
         // TODO code application logic here
         
         System.out.println("bienvenido a el proyecto estructura de datos  ");
-        System.out.println("1. Capitulo 1.0: tipos de datos");
-        System.out.println("2. Capitulo 1.1:tipos de datos ");
-        System.out.println("3. Capitulo 2.0: arreglos");
-        System.out.println("4. Capitulo 2.1: listas");
-        System.out.println("5. Capitulo 3.0: Mapas");
-        System.out.println("6. Capitulo 4.0: Arboles");
-        System.out.println("7. Capitulo 5.0: grafos");
+        System.out.println("1. Capitulo 1: Complejidad");
+        System.out.println("2. Capitulo 2: tipos de datos ");
+        System.out.println("3. Capitulo 3: arreglos");
+        System.out.println("4. Capitulo 4: listas");
+        System.out.println("5. Capitulo 5: Mapas");
+        System.out.println("6. Capitulo 6: Arboles");
+        System.out.println("7. Capitulo 7: grafos");
         System.out.println("8. Nodos Utiles");
         
         Scanner a = new Scanner (System.in);   
     
-        System.out.println("Digite la opcion que desea probar");
+        System.out.println("Digite la opcion que desea probar:");
+        
         
         int num= a.nextInt();
-        int num1= a.nextInt();
+     
         
         switch (num){
             case 1: 
-                System.out.println("tipos de datos ");
+                System.out.println("tipos de datos: ");
+                System.out.println("1. Ciclos");
+                System.out.println("2. Condicionales");
+                System.out.println("3. Ejercicios De Complejidad");
+                System.out.println("Digite la opcion que desee de Complejidad ");  
+                int num1= a.nextInt();
+                
                 switch (num1){
+                    case 1: 
+                        Ciclos fe= new Ciclos();
+                        System.out.println("que ejercicio desea probar:");
+                        System.out.println("1. Muestra los numeros pares del 1 al 100");
+                        System.out.println("2. Muestra la suma de los numero del 1 al 100");
+                        System.out.println("3. Este ejercicio te dice si el numero es primo ");
+                        System.out.println("4. Muestra los numero impares desde el 1 al 100 ");
+                    int num2= a.nextInt();
+                    switch (num2){
+                        
+                        case 1: 
+                            System.out.println(" el ejercicio muestra los pares del 1 al 100");
+                            fe.pares1al100();
+                                    
                     
+                    }
                     
                     
                 }}
