@@ -18,11 +18,16 @@ public class EjercicioTiposDeDatosPersona {
     
     
     public EjercicioTiposDeDatosPersona(String nombre, String cedula, String direccion, String telofono ) {
+        this.nombre= nombre;
         this.cedula = cedula;
        this.direccion= direccion;
        this.telofono= telofono;
         
     }
+
+    public EjercicioTiposDeDatosPersona() {
+    }
+    
 
     /**
      * @return the nombre

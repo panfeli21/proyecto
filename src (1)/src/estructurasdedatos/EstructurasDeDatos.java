@@ -8,6 +8,9 @@ package estructurasdedatos;
 import java.util.Scanner;
 
 import estructurasdedatos.cap1.complejidad.Ciclos;
+import estructurasdedatos.cap1.complejidad.Condicionales;
+import estructurasdedatos.cap5.grafos.Grafo;
+
 
 /*
 import estructurasdedatos.cap1.complejidad.Condicionales;
@@ -47,32 +50,56 @@ public class EstructurasDeDatos {
         
         switch (num){
             case 1: 
-                System.out.println("tipos de datos: ");
+                System.out.println(" Cpitulo 1 Complejidad: ");
                 System.out.println("1. Ciclos");
                 System.out.println("2. Condicionales");
                 System.out.println("3. Ejercicios De Complejidad");
                 System.out.println("Digite la opcion que desee de Complejidad ");  
                 int num1= a.nextInt();
                 
-                switch (num1){
-                    case 1: 
+                switch (num1){ 
+                    case 1: //ciclos
                         Ciclos fe= new Ciclos();
                         System.out.println("que ejercicio desea probar:");
                         System.out.println("1. Muestra los numeros pares del 1 al 100");
                         System.out.println("2. Muestra la suma de los numero del 1 al 100");
-                        System.out.println("3. Este ejercicio te dice si el numero es primo ");
-                        System.out.println("4. Muestra los numero impares desde el 1 al 100 ");
+                        System.out.println("3. Dice si el numero es primo ");
+                        System.out.println("4. Muestra la suma de los pares desde el 1 al 100 ");
                     int num2= a.nextInt();
-                    switch (num2){
-                        
+                    
+                    
+                    switch (num2){                        
                         case 1: 
                             System.out.println(" el ejercicio muestra los pares del 1 al 100");
                             fe.pares1al100();
                                     
+                    break;
                     
-                    }
+                        case 2:
+                            System.out.println("EL ejercicio muestra la suma de los numeros desde el 1 hasta el 100");
+                            fe.sumanum1a100();
+                    break;
                     
+                        case 3: 
+                            System.out.println("este ejercicio te dice si el numero digitado es primo  ");
+                            fe.primo();
+                    break;     
                     
+                        case 4:
+                            System.out.println("este ejercicio muestra la suma de los pares desde el 1 hasta el 100");
+                    fe.sumaimpares1a100();
+                            
+                            break;
+                    } break;
+            
+                    case 2: //condicionales
+                        Condicionales li= new Condicionales ();
+                        System.out.println("ejercicios de condicionales");  
+                        System.out.println("que ejercicio desea probar:");
+                        System.out.println("1. Muestra los numeros pares del 1 al 100");
+                        System.out.println("2. Muestra la suma de los numero del 1 al 100");
+                        System.out.println("3. Dice si el numero es primo ");
+                        
                 }}
         }
    
@@ -102,6 +129,14 @@ public class EstructurasDeDatos {
       System.out.println("postorden");
       nuevo.insertar(0);
       nuevo.postorden();
-    }
-    */
+*/
+   /*Grafo gr = new Grafo(5);
+   //gr.insertaArista(4, 7, 3);
+   //gr.insertaArista(4, 6, 2);
+   //gr.eliminarArista(4, 7);
+   gr.mostrarGrafo();
+   gr.listaAdyVacia(3);*/
+    
+
+    
 

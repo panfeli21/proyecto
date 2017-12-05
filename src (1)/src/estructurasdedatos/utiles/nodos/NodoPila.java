@@ -5,44 +5,44 @@
  */
 package estructurasdedatos.utiles.nodos;
 
+import estructurasdedatos.cap1.tiposdedatos.EjercicioTiposDeDatosPersona;
+
+
 /**
  *
- * @author tusk
+ * @author Risaralda
  */
-public class NodoObjeto {
-    private int dato;
-    private NodoObjeto siguiente;
+public class NodoPila {
+    
+    private EjercicioTiposDeDatosPersona dato;
+    public NodoPila siguiente;
 
     /**
      * @return the dato
      */
-    public int getDato() {
+    public EjercicioTiposDeDatosPersona getDato() {
         return dato;
     }
 
     /**
      * @param dato the dato to set
      */
-    public void setDato(int dato) {
+    public void setDato(EjercicioTiposDeDatosPersona dato) {
         this.dato = dato;
     }
 
     /**
      * @return the siguiente
      */
-    public NodoObjeto getSiguiente() {
+    public NodoPila getSiguiente() {
         return siguiente;
     }
 
     /**
      * @param siguiente the siguiente to set
      */
-    public void setSiguiente(NodoObjeto siguiente) {
+    public void setSiguiente(NodoPila siguiente) {
         this.siguiente = siguiente;
     }
-
-    /**
-     * @return the siguiente
-     */
     
 }
