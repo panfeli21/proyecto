@@ -7,7 +7,7 @@ package estructurasdedatos.cap1.tiposdedatos;
 
 /**
  *
- * @author tusk
+ * @felipe
  */
 public class TiposPrimitivos {
     

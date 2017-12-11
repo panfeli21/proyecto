@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 import estructurasdedatos.cap1.complejidad.Ciclos;
 import estructurasdedatos.cap1.complejidad.Condicionales;
+import estructurasdedatos.cap1.tiposdedatos.EjercicioTiposDeDatosPersona;
 import estructurasdedatos.cap5.grafos.Grafo;
 
 
@@ -30,7 +31,7 @@ public class EstructurasDeDatos {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("bienvenido a el proyecto estructura de datos  ");
+       /* System.out.println("bienvenido a el proyecto estructura de datos  ");
         System.out.println("1. Capitulo 1: Complejidad");
         System.out.println("2. Capitulo 2: tipos de datos ");
         System.out.println("3. Capitulo 3: arreglos");
@@ -38,13 +39,9 @@ public class EstructurasDeDatos {
         System.out.println("5. Capitulo 5: Mapas");
         System.out.println("6. Capitulo 6: Arboles");
         System.out.println("7. Capitulo 7: grafos");
-        System.out.println("8. Nodos Utiles");
-        
-        Scanner a = new Scanner (System.in);   
-    
-        System.out.println("Digite la opcion que desea probar:");
-        
-        
+        System.out.println("8. Nodos Utiles");        
+        Scanner a = new Scanner (System.in);    
+        System.out.println("Digite la opcion que desea probar:");  
         int num= a.nextInt();
      
         
@@ -99,9 +96,56 @@ public class EstructurasDeDatos {
                         System.out.println("1. Muestra los numeros pares del 1 al 100");
                         System.out.println("2. Muestra la suma de los numero del 1 al 100");
                         System.out.println("3. Dice si el numero es primo ");
+                        int num3= a.nextInt();
                         
-                }}
+                        switch(num3){
+                            
+                            case 1:
+                                
+                                System.out.println("este ejercicio muestra os numeros de a hasta b");
+                               li.numerosdeahastab();
+                                break;
+                                
+                            case 2:
+                                System.out.println("este ejercicio muestra los multiplos que hay entre a y b");
+                                li.mulltinumdeahastab();
+                                break;
+                            
+                            case 3:
+                                
+                                System.out.println("este ejercicio muestra los numeros pares que hya entre a y b");
+                                li.pareasdeahastab();
+                                break;
+                                
+                        
+                        
+                        
+                        }
+                        break;
+                                            
+                        
+                }break;
+                
+                
+                case 2:
+                    System.out.println("capitulo 2 tipos de datos");
+                    System.out.println("1.ejercicio persona");
+                    EjercicioTiposDeDatosPersona pe= new EjercicioTiposDeDatosPersona ();
+                    
         }
+        
+      */
+    Grafo gr = new Grafo(10);
+    gr.insertaArista(6, 3, 2);
+    gr.insertaArista(4, 8, 6);
+    gr.insertaArista(3, 9, 5);
+    gr.insertaArista(2, 0, 4);
+    gr.insertaArista(6, 9, 2);
+    gr.mostrarGrafo();
+    
+    gr.insertaArista(4, 9, 5);
+    
+    }
    
           
    
